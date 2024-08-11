@@ -14,7 +14,7 @@ export function SidebarDemo() {
   const links = [
     {
       label: "Courses",
-      href: "#",
+      href: "/courses", // Link to the Courses page
       icon: (
         <IconBook className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -74,11 +74,10 @@ export const Logo = () => {
   );
 };
 
-
 export const LogoIcon = () => {
   return (
     <Link
-      href="#"
+      href="/"
       className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
       <IconSchool className="text-black dark:text-white h-5 w-6 flex-shrink-0" />
@@ -86,10 +85,9 @@ export const LogoIcon = () => {
   );
 };
 
-// Updated Dashboard component with the grey background
 const Dashboard = () => {
   return (
-    <div className="flex flex-1 bg-gray-100 dark:bg-neutral-900 items-center justify-center"> {/* Reverted to grey background */}
+    <div className="flex flex-1 bg-gray-100 dark:bg-neutral-900 items-center justify-center">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-black dark:text-white">
           Your best first-year engineering resource
