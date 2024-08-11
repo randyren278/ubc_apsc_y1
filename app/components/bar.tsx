@@ -9,7 +9,6 @@ import {
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { cn } from "../lib/util";
 
 export function SidebarDemo() {
   const links = [
@@ -60,7 +59,7 @@ export function SidebarDemo() {
 export const Logo = () => {
   return (
     <Link
-      href="#"
+      href="/" // Linking to the root URL to reload the page
       className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
       <IconSchool className="text-black dark:text-white h-5 w-6 flex-shrink-0" />
@@ -75,6 +74,7 @@ export const Logo = () => {
   );
 };
 
+
 export const LogoIcon = () => {
   return (
     <Link
@@ -86,12 +86,17 @@ export const LogoIcon = () => {
   );
 };
 
-// Updated Dashboard component without the loading boxes
+// Updated Dashboard component with the grey background
 const Dashboard = () => {
   return (
-    <div className="flex flex-1">
-      <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
-        {/* Content will go here */}
+    <div className="flex flex-1 bg-gray-100 dark:bg-neutral-900 items-center justify-center"> {/* Reverted to grey background */}
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-black dark:text-white">
+          Your best first-year engineering resource
+        </h1>
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          Welcome to APSC Buddy, your go-to resource for navigating your first year in engineering.
+        </p>
       </div>
     </div>
   );
