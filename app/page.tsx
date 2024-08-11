@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar";
+import { SidebarDemo } from "./components/bar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Navbar/>
-    </main>
+    <div className="h-screen w-screen">
+      <SidebarDemo />
+    </div>
   );
 }
