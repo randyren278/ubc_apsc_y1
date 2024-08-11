@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "./ui/sidebar";
+import { Sidebar, SidebarBody } from "./ui/sidebar";
 import {
   IconBook,
   IconPencil,
@@ -11,6 +11,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export function SidebarDemo() {
+  const [open, setOpen] = useState(false);
+
   const links = [
     {
       label: "Courses",
@@ -21,81 +23,55 @@ export function SidebarDemo() {
     },
     {
       label: "Practice",
-      href: "#",
+      href: "/practice", // Link to the Practice page
       icon: (
         <IconPencil className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Exams",
-      href: "#",
+      href: "/exams", // Link to the Exams page
       icon: (
         <IconCertificate className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
   ];
 
-  const [open, setOpen] = useState(false);
-
   return (
-    <div className="flex h-screen w-screen">
+    <div className="flex h-screen w-64">
       <Sidebar open={open} setOpen={setOpen}>
         <SidebarBody className="justify-between gap-10">
           <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-            {open ? <Logo /> : <LogoIcon />}
+            <Link href="/" passHref>
+              <div className="flex items-center p-2 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md cursor-pointer">
+                <IconSchool className="text-black dark:text-white h-5 w-5 flex-shrink-0" />
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="ml-4 font-medium text-black dark:text-white whitespace-pre"
+                >
+                  APSC Buddy
+                </motion.span>
+              </div>
+            </Link>
+
             <div className="mt-8 flex flex-col gap-2">
               {links.map((link, idx) => (
-                <SidebarLink key={idx} link={link} />
+                <Link key={idx} href={link.href} passHref>
+                  <div className="font-normal flex space-x-2 items-center p-2 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md cursor-pointer">
+                    {link.icon}
+                    <span className="ml-4 text-neutral-700 dark:text-neutral-200">
+                      {link.label}
+                    </span>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
         </SidebarBody>
       </Sidebar>
-      <Dashboard />
     </div>
   );
 }
 
-export const Logo = () => {
-  return (
-    <Link
-      href="/" // Linking to the root URL to reload the page
-      className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
-    >
-      <IconSchool className="text-black dark:text-white h-5 w-6 flex-shrink-0" />
-      <motion.span
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="font-medium text-black dark:text-white whitespace-pre"
-      >
-        APSC Buddy
-      </motion.span>
-    </Link>
-  );
-};
-
-export const LogoIcon = () => {
-  return (
-    <Link
-      href="/"
-      className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
-    >
-      <IconSchool className="text-black dark:text-white h-5 w-6 flex-shrink-0" />
-    </Link>
-  );
-};
-
-const Dashboard = () => {
-  return (
-    <div className="flex flex-1 bg-gray-100 dark:bg-neutral-900 items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-black dark:text-white">
-          Your best first-year engineering resource
-        </h1>
-        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-          Welcome to APSC Buddy, your go-to resource for navigating your first year in engineering.
-        </p>
-      </div>
-    </div>
-  );
-};
+export default SidebarDemo;
