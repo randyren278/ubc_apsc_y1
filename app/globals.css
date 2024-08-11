@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+html, body {
+  height: 100%; /* Ensure full height for the html and body */
+  overflow: hidden; /* Prevent scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+.non-scrollable {
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent scrolling within the element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
