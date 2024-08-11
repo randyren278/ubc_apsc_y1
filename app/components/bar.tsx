@@ -50,7 +50,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
             </motion.span>
           </div>
         </div>
-        <div className="mt-8 flex flex-col gap-2">
+        <div className="mt-4 flex flex-col gap-2">
           {links.map((link, idx) => (
             <div
               key={idx}
