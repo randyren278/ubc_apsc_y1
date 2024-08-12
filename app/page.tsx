@@ -29,7 +29,7 @@ export default function MainPage() {
   return (
     <div className="flex min-h-screen">
       <SidebarDemo setTab={setTab} />
-      <div className="flex-1 p-8 ml-64 bg-gray-100 dark:bg-neutral-900">
+      <div className="flex-1 p-8 ml-12  bg-gray-100 dark:bg-neutral-900 ">
         {renderContent()}
       </div>
     </div>
