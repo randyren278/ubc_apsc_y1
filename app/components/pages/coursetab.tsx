@@ -189,9 +189,58 @@ export default function CourseTab({ course }: CourseTabProps) {
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 157 lecture notes...
-            </p>
+            <ul className="list-none">
+              {[
+                "PHYS 157 Week 1-1.pdf",
+                "PHYS 157 Week 1-2.pdf",
+                "PHYS 157 Week 2-1.pdf",
+                "PHYS 157 Week 2-2.pdf",
+                "PHYS 157 Week 2-3.pdf",
+                "PHYS 157 Week 3-1.pdf",
+                "PHYS 157 Week 3-2.pdf",
+                "PHYS 157 Week 3-3.pdf",
+                "PHYS 157 Week 4-1.pdf",
+                "PHYS 157 Week 4-2.pdf",
+                "PHYS 157 Week 4-3.pdf",
+                "PHYS 157 Week 5-1.pdf",
+                "PHYS 157 Week 5-2.pdf",
+                "PHYS 157 Week 6-1.pdf",
+                "PHYS 157 Week 6-2.pdf",
+                "PHYS 157 Week 6-3.pdf",
+                "PHYS 157 Week 7-1.pdf",
+                "PHYS 157 Week 7-2.pdf",
+                "PHYS 157 Week 7-3.pdf",
+                "PHYS 157 Week 8-1.pdf",
+                "PHYS 157 Week 8-2.pdf",
+                "PHYS 157 Week 8-3.pdf",
+                "PHYS 157 Week 9-1.pdf",
+                "PHYS 157 Week 9-2.pdf",
+                "PHYS 157 Week 9-3.pdf",
+                "PHYS 157 Week 10-1.pdf",
+                "PHYS 157 Week 10-2.pdf",
+                "PHYS 157 Week 10-3.pdf",
+                "PHYS 157 Week 11-1.pdf",
+                "PHYS 157 Week 12-1.pdf",
+                "PHYS 157 Week 12-2.pdf",
+                "PHYS 157 Week 12-3.pdf",
+                "PHYS 157 Week 13-1.pdf",
+                "PHYS 157 Week 13-2.pdf",
+                "PHYS 157 Week 13-3.pdf",
+                "PHYS 157 Week 14-1.pdf",
+                "PHYS 157 Week 14-2.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/resources/phys157/lecture_notes/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
               Practice Questions
@@ -208,6 +257,7 @@ export default function CourseTab({ course }: CourseTabProps) {
             </p>
           </div>
         );
+
       case "phys-158":
         return (
           <div>
