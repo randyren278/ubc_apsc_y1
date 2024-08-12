@@ -6,6 +6,7 @@ import CoursesPage from "./components/pages/courses";
 import PracticePage from "./components/pages/practice";
 import ExamsPage from "./components/pages/exams";
 import CourseTab from "./components/pages/coursetab";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function MainPage() {
   const [tab, setTab] = useState<string>("home"); // Default tab is home
@@ -32,6 +33,7 @@ export default function MainPage() {
       <div className="flex-1 p-8 ml-12 bg-neutral-900 ">
         {renderContent()}
       </div>
+      <Analytics /> 
     </div>
   );
 }
