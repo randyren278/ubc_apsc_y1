@@ -4,6 +4,12 @@ import React from "react";
 // Example posts data
 const posts = [
   {
+    title: "Math Courses",
+    date: "August 12, 2024",
+    content:
+      "All math courses have been uploaded, feel free to get in contact with me if you have better notes!",
+  },
+  {
     title: "New Courses",
     date: "August 12, 2024",
     content:
