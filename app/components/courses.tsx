@@ -24,7 +24,7 @@ export default function CoursesPage() {
           key={idx}
           className="w-full md:w-1/2 lg:w-1/3 p-4"
         >
-          <div className="bg-white dark:bg-neutral-800 shadow-md rounded-lg p-6 flex items-center justify-center text-center h-32">
+          <div className="bg-white dark:bg-neutral-800 shadow-md rounded-lg p-6 flex items-center justify-center text-center h-32 transition duration-200 ease-in-out hover:bg-gray-200 dark:hover:bg-neutral-700 hover:shadow-lg cursor-pointer">
             <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
               {course}
             </h2>
