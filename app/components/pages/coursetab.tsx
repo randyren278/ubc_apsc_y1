@@ -315,7 +315,7 @@ export default function CourseTab({ course }: CourseTabProps) {
 
   return (
     <div className="p-8 bg-gray-100 dark:bg-neutral-900 min-h-screen">
-      <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">
+      <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 text-decoration: underline">
         {course.replace("-", " ").toUpperCase()}
       </h1>
       {renderContent()}
