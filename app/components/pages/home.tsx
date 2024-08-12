@@ -5,7 +5,7 @@ import React from "react";
 const posts = [
   {
     title: "Latest Updates",
-    date: "August 12, 2024",
+    date: "August 11, 2024",
     content:
       "We are excited to announce new resources for your first-year engineering courses! Check out the latest lecture notes, practice exams, and more to help you excel in your studies. Currently PHYS 157 and 158 are live!",
   },
