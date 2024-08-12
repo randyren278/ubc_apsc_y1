@@ -148,19 +148,67 @@ export default function CourseTab({ course }: CourseTabProps) {
             <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className=" text-gray-300">
-              Content for Math 152 lecture notes...
-            </p>
+            <ul className="list-none">
+              {[
+                "math152 student lecture notes.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/math 152/lecture notes/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
 
             <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
+              Textbook
             </h2>
-            <p className=" text-gray-300">
-              Content for Math 152 practice questions...
-            </p>
+            <ul className="list-none">
+              {[
+                "math152 textbook.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/math 152/textbook/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
-            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for Math 152 exams...</p>
+
+            <h2 className="text-2xl font-semibold  text-white">Labs</h2>
+            <ul className="list-none">
+              {[
+                "lab1.pdf",
+                "lab2.pdf",
+                "lab3.pdf",
+                "lab4.pdf",
+                "lab5.pdf",
+                "lab6.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/math 152/labs/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         );
       case "apsc-100":
