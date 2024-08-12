@@ -243,12 +243,59 @@ export default function CourseTab({ course }: CourseTabProps) {
             </ul>
 
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Practice Questions
+              Tutorials
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 157 practice questions...
-            </p>
-
+            <ul className="list-none">
+              {[
+                "tutorial1sol.pdf",
+                "tutorial2sol.pdf",
+                "tutorial3sol.pdf",
+                "tutorial4sol.pdf",
+                "tutorial5sol.pdf",
+                "tutorial6sol.pdf",
+                "tutorial7sol.pdf",
+                "tutorial8sol.pdf",
+                "tutorial9sol.pdf",
+                "tutorial10sol.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys157/tutorials/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+              Written Homework
+            </h2>
+            <ul className="list-none">
+              {[
+                "HW1_sol.pdf",
+                "HW2_sol.pdf",
+                "HW3_sol.pdf",
+                "HW4_sol.pdf",
+                "HW5_sol.pdf",
+                "HW6_sol.pdf",
+                "HW7_sol.pdf",
+                "HW8_sol.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys157/written_hw/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName}
+                  </a>
+                </li>
+              ))}
+            </ul>
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
               Exams
             </h2>
