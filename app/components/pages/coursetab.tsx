@@ -311,16 +311,114 @@ export default function CourseTab({ course }: CourseTabProps) {
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 158 lecture notes...
-            </p>
+            <ul className="list-none">
+              {[
+                "Week 01-1 PHYS 158-2024.pdf",
+                "Week 01-2 PHYS 158-2024.pdf",
+                "Week 01-3 PHYS 158-2024.pdf",
+                "Week 02-1 PHYS 158-2024.pdf",
+                "Week 02-2 PHYS 158-2024.pdf",
+                "Week 02-3 PHYS 158-2024.pdf",
+                "Week 03-1 PHYS 158.pdf",
+                "Week 03-2 PHYS 158.pdf",
+                "Week 03-3 PHYS 158.pdf",
+                "Week 4-1 PHYS 158.pdf",
+                "Week 4-2 PHYS 158.pdf",
+                "Week 4-3 PHYS 158.pdf",
+                "Week 5-1 PHYS 158-2024.pdf",
+                "Week 5-2 PHYS 158-2024.pdf",
+                "Week 5-3 PHYS 158-2024.pdf",
+                "Week 06-1 PHYS 158-2024.pdf",
+                "Week 06-2 PHYS 158-2024.pdf",
+                "Week 07-1 PHYS 158-2024.pdf",
+                "Week 07-2 PHYS 158-2024.pdf",
+                "Week 07-3 PHYS 158-2024.pdf",
+                "Week 08-1 PHYS 158-2024.pdf",
+                "Week 08-2 PHYS 158-2024.pdf",
+                "Week 08-3 PHYS 158-2024.pdf",
+                "Week 09-1 PHYS 158-2024.pdf",
+                "Week 09-2 PHYS 158-2024.pdf",
+                "Week 09-3 PHYS 158-2024.pdf",
+                "Week 10-1 PHYS 158-2024.pdf",
+                "Week 10-2 PHYS 158-2024.pdf",
+                "Week 10-3 PHYS 158-2024.pdf",
+                "Week 11-1 PHYS 158-2024.pdf",
+                "Week 11-2 PHYS 158-2024.pdf",
+                "Week 12-1 PHYS 158-2024.pdf",
+                "Week 12-2 PHYS 158-2024.pdf",
+                "Week 12-3 PHYS 158-2024.pdf",
+                "Week 13-1 PHYS 158-2024.pdf",
+                "Week 13-2 PHYS 158-2024.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys158/lecture_notes/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Practice Questions
+              Tutorials
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 158 practice questions...
-            </p>
+            <ul className="list-none">
+              {[
+                "Week2_solutions.pdf",
+                "Week3_Solutions.pdf",
+                "Week4_Solutions.pdf",
+                "Week5_Solutions.pdf",
+                "Week6_Solutions.pdf",
+                "Week7_solutions.pdf",
+                "Week8_Solutions.pdf",
+                "Week9 - Solutions.pdf",
+                "Week10 - Solutions.pdf",
+                "Week11 - Solutions.pdf",
+                "Week12 - Solutions.pdf",
+                "Week13_solutions.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys158/tutorials/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}{" "}
+                    {/* Remove the .pdf extension in display */}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+              Written Homework
+            </h2>
+            <ul className="list-none">
+              {[
+                "written_hw1.pdf",
+                "written_hw2.pdf",
+                "written_hw3.pdf",
+                "written_hw4.pdf",
+                "written_hw5.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys158/written_hw/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}{" "}
+                    {/* Remove the .pdf extension in display */}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
               Exams
