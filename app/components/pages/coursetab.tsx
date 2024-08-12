@@ -611,21 +611,28 @@ export default function CourseTab({ course }: CourseTabProps) {
         return (
           <div>
             <h2 className="text-2xl font-semibold  text-white">
-              Lecture Notes
+              Assessments 
             </h2>
-            <p className=" text-gray-300">
-              Content for WRDS 150B lecture notes...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
-            </h2>
-            <p className=" text-gray-300">
-              Content for WRDS 150B practice questions...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for WRDS 150B exams...</p>
+            <ul className="list-none">
+              {[
+                "ILA Reader Response.pdf",
+                "ILA Research and Responsibility.pdf",
+                "Proposal and Annotated Bibliography.pdf",
+                "WRDS 150B FInal Paper.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/wrds150b/assessments/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}{" "}
+                    {/* Remove the .pdf extension in display */}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         );
       default:
