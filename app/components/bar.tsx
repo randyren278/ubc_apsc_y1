@@ -1,6 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import { IconBook, IconPencil, IconCertificate, IconSchool } from "@tabler/icons-react";
+import {
+  IconBook,
+  IconPencil,
+  IconCertificate,
+  IconSchool,
+  IconMail,
+} from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
 interface SidebarDemoProps {
@@ -36,7 +42,9 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
 
   return (
     <div
-      className={`flex h-screen fixed transition-all duration-300 ${isHovered ? 'w-64' : 'w-13'}`}
+      className={`flex h-screen fixed transition-all duration-300 ${
+        isHovered ? "w-64" : "w-13"
+      }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -55,7 +63,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
             )}
           </div>
         </div>
-        <div className="mt-4 flex flex-col gap-2">
+        <div className="mt-4 flex flex-col gap-2 flex-grow">
           {links.map((link, idx) => (
             <div
               key={idx}
@@ -74,6 +82,25 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
               )}
             </div>
           ))}
+        </div>
+        <div className="mt-auto">
+          <div className="flex items-center p-4 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md cursor-pointer">
+            <a
+              href="mailto:randyren278@gmail.com"
+              className="flex items-center hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md cursor-pointer text-neutral-700 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-neutral-100"
+            >
+              <IconMail className="h-5 w-5 flex-shrink-0" />
+              {isHovered && (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="ml-3 text-neutral-700 dark:text-neutral-200 whitespace-pre text-sm"
+                >
+                  Contact Me
+                </motion.span>
+              )}
+            </a>
+          </div>
         </div>
       </div>
     </div>
