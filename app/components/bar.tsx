@@ -42,7 +42,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
           <div className="flex items-center p-2 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md">
             <IconSchool className="text-black dark:text-white h-5 w-5 flex-shrink-0" />
             <motion.span
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
               className="ml-4 font-medium text-black dark:text-white whitespace-pre"
             >

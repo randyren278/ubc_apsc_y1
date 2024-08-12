@@ -23,7 +23,7 @@ export default function MainPage() {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex min-h-screen bg-neutral-900">
       {/* Sidebar */}
       <SidebarDemo setTab={setTab} />
 

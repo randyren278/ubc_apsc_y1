@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 38, 38, 38; /* neutral-900 equivalent */
+  --background-end-rgb: 38, 38, 38; /* neutral-900 equivalent */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-start-rgb)); /* Solid background color */
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); /* Gradient overlay */
 }
 
 @layer utilities {
@@ -32,18 +33,3 @@ body {
   }
 }
 
-html, body {
-  height: 100%; /* Ensure full height for the html and body */
-  overflow: hidden; /* Prevent scrolling */
-  margin: 0;
-  padding: 0;
-}
-
-.non-scrollable {
-  height: 100vh; /* Full height of the viewport */
-  overflow: hidden; /* Prevent scrolling within the element */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-}
