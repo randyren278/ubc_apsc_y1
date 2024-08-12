@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { IconBook, IconPencil, IconCertificate, IconSchool } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 
-// Define the type for the setTab prop
 interface SidebarDemoProps {
   setTab: (tab: string) => void;
 }
@@ -14,21 +13,21 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
   const links = [
     {
       label: "Courses",
-      tab: "courses", // Tab name for Courses
+      tab: "courses",
       icon: (
         <IconBook className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Practice",
-      tab: "practice", // Tab name for Practice
+      tab: "practice",
       icon: (
         <IconPencil className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Exams",
-      tab: "exams", // Tab name for Exams
+      tab: "exams",
       icon: (
         <IconCertificate className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -43,7 +42,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
     >
       <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-gray-100 dark:bg-neutral-800">
         <div onClick={() => setTab("home")} className="cursor-pointer">
-          <div className="flex items-center p-4  hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md">
+          <div className="flex items-center p-4 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md">
             <IconSchool className="text-black dark:text-white h-5 w-5 flex-shrink-0" />
             {isHovered && (
               <motion.span
@@ -65,9 +64,13 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
             >
               {link.icon}
               {isHovered && (
-                <span className="ml-4 text-neutral-700 dark:text-neutral-200">
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="ml-4 text-neutral-700 dark:text-neutral-200"
+                >
                   {link.label}
-                </span>
+                </motion.span>
               )}
             </div>
           ))}
