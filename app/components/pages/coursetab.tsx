@@ -81,10 +81,10 @@ export default function CourseTab({ course }: CourseTabProps) {
             </h2>
             <ul className="list-none">
               {[
-                "A1(A).pdf",
-                "A2(A).pdf",
-                "A3(A).pdf",
-                "A4(A).pdf",
+                "A1(A)sol.pdf",
+                "A2(A)sol.pdf",
+                "A3(A)sol.pdf",
+                "A4(A)sol.pdf",
               ].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
