@@ -15,32 +15,25 @@ export default function CourseTab({ course }: CourseTabProps) {
               Math Assignments
             </h2>
             <ul className="list-none">
-              {[
-                "A1(A).pdf",
-                "A2(A).pdf",
-                "A3(A).pdf",
-                "A4(A).pdf",
-              ].map((fileName, index) => (
-                <li key={index} className="mb-2">
-                  <a
-                    href={`/math100/math assignments/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {fileName.replace(".pdf", "")}
-                  </a>
-                </li>
-              ))}
+              {["A1(A).pdf", "A2(A).pdf", "A3(A).pdf", "A4(A).pdf"].map(
+                (fileName, index) => (
+                  <li key={index} className="mb-2">
+                    <a
+                      href={`/math100/math assignments/${fileName}`}
+                      className="text-blue-500 hover:text-blue-700"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {fileName.replace(".pdf", "")}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
 
-            <h2 className="text-2xl font-semibold  text-white">
-              Textbook
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Textbook</h2>
             <ul className="list-none">
-              {[
-                "calculus 1 textbook.pdf",
-              ].map((fileName, index) => (
+              {["calculus 1 textbook.pdf"].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
                     href={`/math100/textbook/${fileName}`}
@@ -56,9 +49,7 @@ export default function CourseTab({ course }: CourseTabProps) {
 
             <h2 className="text-2xl font-semibold  text-white">Problem Book</h2>
             <ul className="list-none">
-              {[
-                "calculus 1 problems.pdf",
-              ].map((fileName, index) => (
+              {["calculus 1 problems.pdf"].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
                     href={`/math100/textbook/${fileName}`}
@@ -99,14 +90,9 @@ export default function CourseTab({ course }: CourseTabProps) {
               ))}
             </ul>
 
-
-            <h2 className="text-2xl font-semibold  text-white">
-              Textbook
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Textbook</h2>
             <ul className="list-none">
-              {[
-                "calculus 2 textbook.pdf",
-              ].map((fileName, index) => (
+              {["calculus 2 textbook.pdf"].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
                     href={`/math 101/textbook/${fileName}`}
@@ -120,13 +106,9 @@ export default function CourseTab({ course }: CourseTabProps) {
               ))}
             </ul>
 
-            <h2 className="text-2xl font-semibold  text-white">
-              Problem Book
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Problem Book</h2>
             <ul className="list-none">
-              {[
-                "calculus 2 problems.pdf",
-              ].map((fileName, index) => (
+              {["calculus 2 problems.pdf"].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
                     href={`/math 101/textbook/${fileName}`}
@@ -139,7 +121,6 @@ export default function CourseTab({ course }: CourseTabProps) {
                 </li>
               ))}
             </ul>
-
           </div>
         );
       case "math-152":
@@ -149,9 +130,7 @@ export default function CourseTab({ course }: CourseTabProps) {
               Lecture Notes
             </h2>
             <ul className="list-none">
-              {[
-                "math152 student lecture notes.pdf",
-              ].map((fileName, index) => (
+              {["math152 student lecture notes.pdf"].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
                     href={`/math 152/lecture notes/${fileName}`}
@@ -165,14 +144,9 @@ export default function CourseTab({ course }: CourseTabProps) {
               ))}
             </ul>
 
-
-            <h2 className="text-2xl font-semibold  text-white">
-              Textbook
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Textbook</h2>
             <ul className="list-none">
-              {[
-                "math152 textbook.pdf",
-              ].map((fileName, index) => (
+              {["math152 textbook.pdf"].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
                     href={`/math 152/textbook/${fileName}`}
@@ -185,7 +159,6 @@ export default function CourseTab({ course }: CourseTabProps) {
                 </li>
               ))}
             </ul>
-
 
             <h2 className="text-2xl font-semibold  text-white">Labs</h2>
             <ul className="list-none">
@@ -215,21 +188,27 @@ export default function CourseTab({ course }: CourseTabProps) {
         return (
           <div>
             <h2 className="text-2xl font-semibold  text-white">
-              Lecture Notes
+              Module Content
             </h2>
-            <p className=" text-gray-300">
-              Content for APSC 100 lecture notes...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
-            </h2>
-            <p className=" text-gray-300">
-              Content for APSC 100 practice questions...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for APSC 100 exams...</p>
+            <ul className="list-none">
+              {[
+                "Cardboard chair poster.png",
+                "Bike Lane Recommendation.pdf",
+                "H.O.L.D. Ease Bottle & Can Opener.png",
+                "HOLD Technical Memo.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/apsc100/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "").replace(".png", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         );
       case "apsc-101":
@@ -750,9 +729,7 @@ export default function CourseTab({ course }: CourseTabProps) {
       case "wrds-150b":
         return (
           <div>
-            <h2 className="text-2xl font-semibold  text-white">
-              Assessments 
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Assessments</h2>
             <ul className="list-none">
               {[
                 "ILA Reader Response.pdf",
