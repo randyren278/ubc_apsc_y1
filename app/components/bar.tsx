@@ -20,22 +20,20 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
     {
       label: "Courses",
       tab: "courses",
-      icon: (
-        <IconBook className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
+      icon: <IconBook className="   text-neutral-200 h-5 w-5 flex-shrink-0" />,
     },
     {
       label: "Practice",
       tab: "practice",
       icon: (
-        <IconPencil className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconPencil className="   text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Exams",
       tab: "exams",
       icon: (
-        <IconCertificate className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconCertificate className="   text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
   ];
@@ -48,15 +46,15 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-gray-100 dark:bg-neutral-800">
+      <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-neutral-800">
         <div onClick={() => setTab("home")} className="cursor-pointer">
-          <div className="flex items-center p-4 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md">
-            <IconSchool className="text-black dark:text-white h-5 w-5 flex-shrink-0" />
+          <div className="flex items-center p-4 hover:bg-neutral-700 rounded-md">
+            <IconSchool className="text-white h-5 w-5 flex-shrink-0" />
             {isHovered && (
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="ml-4 font-medium text-black dark:text-white whitespace-pre text-sm"
+                className="ml-4 font-medium text-white whitespace-pre text-sm"
               >
                 APSC Buddy
               </motion.span>
@@ -68,14 +66,14 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
             <div
               key={idx}
               onClick={() => setTab(link.tab)}
-              className="flex items-center p-4 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md cursor-pointer"
+              className="flex items-center p-4  hover:bg-neutral-700 rounded-md cursor-pointer"
             >
               {link.icon}
               {isHovered && (
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="ml-4 text-neutral-700 dark:text-neutral-200 text-sm"
+                  className="ml-4    text-neutral-200 text-sm"
                 >
                   {link.label}
                 </motion.span>
@@ -84,17 +82,17 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
           ))}
         </div>
         <div className="mt-auto">
-          <div className="flex items-center p-4 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md cursor-pointer">
+          <div className="flex items-center p-4  hover:bg-neutral-700 rounded-md cursor-pointer">
             <a
               href="mailto:randyren278@gmail.com"
-              className="flex items-center hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md cursor-pointer text-neutral-700 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-neutral-100"
+              className="flex items-center  hover:bg-neutral-700 rounded-md cursor-pointer    text-neutral-200 hover:text-neutral-100"
             >
               <IconMail className="h-5 w-5 flex-shrink-0" />
               {isHovered && (
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="ml-3 text-neutral-700 dark:text-neutral-200 whitespace-pre text-sm"
+                  className="ml-3    text-neutral-200 whitespace-pre text-sm"
                 >
                   Contact Me
                 </motion.span>

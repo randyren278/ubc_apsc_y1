@@ -11,182 +11,154 @@ export default function CourseTab({ course }: CourseTabProps) {
       case "math-100":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Math 100 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Math 100 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Math 100 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Math 100 exams...</p>
           </div>
         );
       case "math-101":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Math 101 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Math 101 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Math 101 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Math 101 exams...</p>
           </div>
         );
       case "math-152":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Math 152 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Math 152 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Math 152 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Math 152 exams...</p>
           </div>
         );
       case "apsc-100":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for APSC 100 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for APSC 100 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for APSC 100 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for APSC 100 exams...</p>
           </div>
         );
       case "apsc-101":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for APSC 101 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for APSC 101 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for APSC 101 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for APSC 101 exams...</p>
           </div>
         );
       case "apsc-160":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for APSC 160 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for APSC 160 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for APSC 160 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for APSC 160 exams...</p>
           </div>
         );
       case "chem-154":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Chem 154 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Chem 154 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Chem 154 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Chem 154 exams...</p>
           </div>
         );
       case "phys-157":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
             <ul className="list-none">
@@ -232,7 +204,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys157/lecture_notes/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -242,9 +214,7 @@ export default function CourseTab({ course }: CourseTabProps) {
               ))}
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Tutorials
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Tutorials</h2>
             <ul className="list-none">
               {[
                 "tutorial1sol.pdf",
@@ -261,7 +231,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys157/tutorials/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -270,7 +240,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 </li>
               ))}
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Written Homework
             </h2>
             <ul className="list-none">
@@ -287,7 +257,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys157/written_hw/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -296,19 +266,15 @@ export default function CourseTab({ course }: CourseTabProps) {
                 </li>
               ))}
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 157 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Phys 157 exams...</p>
           </div>
         );
 
       case "phys-158":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
             <ul className="list-none">
@@ -353,7 +319,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys158/lecture_notes/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -363,9 +329,7 @@ export default function CourseTab({ course }: CourseTabProps) {
               ))}
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Tutorials
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Tutorials</h2>
             <ul className="list-none">
               {[
                 "Week2_solutions.pdf",
@@ -384,7 +348,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys158/tutorials/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -395,7 +359,7 @@ export default function CourseTab({ course }: CourseTabProps) {
               ))}
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Written Homework
             </h2>
             <ul className="list-none">
@@ -409,7 +373,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys158/written_hw/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -420,87 +384,71 @@ export default function CourseTab({ course }: CourseTabProps) {
               ))}
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 158 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Phys 158 exams...</p>
           </div>
         );
       case "phys-159":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Phys 159 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Phys 159 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 159 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Phys 159 exams...</p>
           </div>
         );
       case "phys-170":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Phys 170 lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for Phys 170 practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for Phys 170 exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for Phys 170 exams...</p>
           </div>
         );
       case "wrds-150b":
         return (
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for WRDS 150B lecture notes...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-300">
               Content for WRDS 150B practice questions...
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
-              Exams
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Content for WRDS 150B exams...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
+            <p className=" text-gray-300">Content for WRDS 150B exams...</p>
           </div>
         );
       default:
@@ -509,8 +457,8 @@ export default function CourseTab({ course }: CourseTabProps) {
   };
 
   return (
-    <div className="p-8 bg-gray-100 dark:bg-neutral-900 min-h-screen">
-      <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6 text-decoration: underline">
+    <div className="p-8 bg-neutral-900 min-h-screen">
+      <h1 className="text-3xl font-bold  text-white mb-6 text-decoration: underline">
         {course.replace("-", " ").toUpperCase()}
       </h1>
       {renderContent()}
