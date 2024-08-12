@@ -392,21 +392,33 @@ export default function CourseTab({ course }: CourseTabProps) {
         return (
           <div>
             <h2 className="text-2xl font-semibold  text-white">
-              Lecture Notes
+              Labs
             </h2>
-            <p className=" text-gray-300">
-              Content for Phys 159 lecture notes...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
-            </h2>
-            <p className=" text-gray-300">
-              Content for Phys 159 practice questions...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for Phys 159 exams...</p>
+            <ul className="list-none">
+              {[
+                "LAB-1.pdf",
+                "LAB-2.pdf",
+                "LAB-3.pdf",
+                "LAB-4.pdf",
+                "LAB-5.pdf",
+                "LAB-6.pdf",
+                "LAB-7.pdf",
+                "LAB-8.pdf",
+                "LAB-9.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys159/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}{" "}
+                    {/* Remove the .pdf extension in display */}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         );
       case "phys-170":
