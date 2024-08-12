@@ -507,7 +507,26 @@ export default function CourseTab({ course }: CourseTabProps) {
             </ul>
 
             <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for Phys 170 exams...</p>
+            <ul className="list-none">
+              {[
+                "midterm exam questions.pdf",
+                "midterm exam sol.pdf",
+                "final exam questions.pdf",
+                "final exam sol.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys170/exams/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}{" "}
+                    {/* Remove the .pdf extension in display */}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         );
       case "wrds-150b":
