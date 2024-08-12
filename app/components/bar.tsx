@@ -48,7 +48,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="ml-4 font-medium text-black dark:text-white whitespace-pre"
+                className="ml-4 font-medium text-black dark:text-white whitespace-pre text-sm"
               >
                 APSC Buddy
               </motion.span>
@@ -67,7 +67,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="ml-4 text-neutral-700 dark:text-neutral-200"
+                  className="ml-4 text-neutral-700 dark:text-neutral-200 text-sm"
                 >
                   {link.label}
                 </motion.span>
