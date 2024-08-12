@@ -231,7 +231,7 @@ export default function CourseTab({ course }: CourseTabProps) {
               ].map((fileName, index) => (
                 <li key={index} className="mb-2">
                   <a
-                    href={`/resources/phys157/lecture_notes/${fileName}`}
+                    href={`/phys157/lecture_notes/${fileName}`}
                     className="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-500"
                     target="_blank"
                     rel="noopener noreferrer"
