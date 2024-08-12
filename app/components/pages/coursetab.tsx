@@ -204,7 +204,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys157/lecture_notes/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700    "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -231,7 +231,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys157/tutorials/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700    "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -257,7 +257,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys157/written_hw/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -319,7 +319,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys158/lecture_notes/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700    "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -348,7 +348,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys158/tutorials/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700    "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -373,7 +373,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys158/written_hw/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700    "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -391,9 +391,7 @@ export default function CourseTab({ course }: CourseTabProps) {
       case "phys-159":
         return (
           <div>
-            <h2 className="text-2xl font-semibold  text-white">
-              Labs
-            </h2>
+            <h2 className="text-2xl font-semibold  text-white">Labs</h2>
             <ul className="list-none">
               {[
                 "LAB-1.pdf",
@@ -409,7 +407,7 @@ export default function CourseTab({ course }: CourseTabProps) {
                 <li key={index} className="mb-2">
                   <a
                     href={`/phys159/${fileName}`}
-                    className="text-blue-500 hover:text-blue-700  :text-blue-300  :hover:text-blue-500"
+                    className="text-blue-500 hover:text-blue-700    "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -427,16 +425,86 @@ export default function CourseTab({ course }: CourseTabProps) {
             <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className=" text-gray-300">
-              Content for Phys 170 lecture notes...
-            </p>
+            <ul className="list-none">
+              {[
+                "PHYS 170 Week 01-1.pdf",
+                "PHYS 170 Week 01-2.pdf",
+                "PHYS 170 Week 01-3.pdf",
+                "PHYS 170 Week 02-1.pdf",
+                "PHYS 170 Week 02-2.pdf",
+                "PHYS 170 Week 02-3.pdf",
+                "PHYS 170 Week 03-1.pdf",
+                "PHYS 170 Week 03-2.pdf",
+                "PHYS 170 Week 03-3.pdf",
+                "PHYS 170 Week 04-1.pdf",
+                "PHYS 170 Week 04-2.pdf",
+                "PHYS 170 Week 04-3.pdf",
+                "PHYS 170 Week 05-1.pdf",
+                "PHYS 170 Week 05-2.pdf",
+                "PHYS 170 Week 05-3.pdf",
+                "PHYS 170 Week 06-1.pdf",
+                "PHYS 170 Week 06-2.pdf",
+                "PHYS 170 Week 06-3.pdf",
+                "PHYS 170 Week 07-1.pdf",
+                "PHYS 170 Week 07-2.pdf",
+                "PHYS 170 Week 07-3.pdf",
+                "PHYS 170 Week 08-1.pdf",
+                "PHYS 170 Week 08-2.pdf",
+                "PHYS 170 Week 08-3.pdf",
+                "PHYS 170 Week 09-1.pdf",
+                "PHYS 170 Week 09-2.pdf",
+                "PHYS 170 Week 09-3.pdf",
+                "PHYS 170 Week 10-1.pdf",
+                "PHYS 170 Week 10-2.pdf",
+                "PHYS 170 Week 10-3.pdf",
+                "PHYS 170 Week 11-1.pdf",
+                "PHYS 170 Week 11-2.pdf",
+                "PHYS 170 Week 12-1.pdf",
+                "PHYS 170 Week 12-2.pdf",
+                "PHYS 170 Week 12-3.pdf",
+                "PHYS 170 Week 13-1.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys170/lecture_notes/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}{" "}
+                    {/* Remove the .pdf extension in display */}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
-            <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
-            </h2>
-            <p className=" text-gray-300">
-              Content for Phys 170 practice questions...
-            </p>
+            <h2 className="text-2xl font-semibold  text-white">Tutorials</h2>
+            <ul className="list-none">
+              {[
+                "tutorial 1.pdf",
+                "tutorial 2.pdf",
+                "tutorial 3.pdf",
+                "tutorial 4.pdf",
+                "tutorial 5.pdf",
+                "tutorial 6.pdf",
+                "tutorial 7.pdf",
+                "tutorial 8.pdf",
+                "tutorial 9.pdf",
+                "tutorial 10.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/phys170/tutorial/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}{" "}
+                    {/* Remove the .pdf extension in display */}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
             <h2 className="text-2xl font-semibold  text-white">Exams</h2>
             <p className=" text-gray-300">Content for Phys 170 exams...</p>
