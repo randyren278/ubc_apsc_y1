@@ -43,7 +43,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
     >
       <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden bg-gray-100 dark:bg-neutral-800">
         <div onClick={() => setTab("home")} className="cursor-pointer">
-          <div className="flex items-center p-4 hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md">
+          <div className="flex items-center p-4  hover:bg-gray-200 dark:hover:bg-neutral-700 rounded-md">
             <IconSchool className="text-black dark:text-white h-5 w-5 flex-shrink-0" />
             {isHovered && (
               <motion.span
