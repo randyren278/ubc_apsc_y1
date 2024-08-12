@@ -140,19 +140,97 @@ export default function CourseTab({ course }: CourseTabProps) {
             <h2 className="text-2xl font-semibold  text-white">
               Lecture Notes
             </h2>
-            <p className=" text-gray-300">
-              Content for Chem 154 lecture notes...
-            </p>
+            <ul className="list-none">
+              {[
+                "Lecture 1.pdf",
+                "Lecture 2.pdf",
+                "Lecture 3-1.pdf",
+                "Lecture 3.pdf",
+                "Lecture 4.pdf",
+                "Lecture 5.pdf",
+                "Lecture 6.pdf",
+                "Lecture 7.pdf",
+                "Lecture 8.pdf",
+                "Lecture 9.pdf",
+                "Lecture 10.pdf",
+                "Lecture 11.pdf",
+                "Lecture 12.pdf",
+                "Lecture 13.pdf",
+                "Lecture 14.pdf",
+                "Lecture 15.pdf",
+                "Lecture 16.pdf",
+                "Lecture 17.pdf",
+                "Lecture 18.pdf",
+                "Lecture 19.pdf",
+                "Lecture 20.pdf",
+                "Lecture 21-1.pdf",
+                "Lecture 21.pdf",
+                "Lecture 22.pdf",
+                "Lecture 23.pdf",
+                "Lecture 24.pdf",
+                "Lecture 25.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/chem154/lecture_notes/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
             <h2 className="text-2xl font-semibold  text-white">
               Practice Questions
             </h2>
-            <p className=" text-gray-300">
-              Content for Chem 154 practice questions...
-            </p>
+            <ul className="list-none">
+              {[
+                "CHEM154-WS-Unit 1_KEY.pdf",
+                "CHEM154-WS-Unit 2_KEY.pdf",
+                "CHEM154-WS-Unit 3_KEY.pdf",
+                "CHEM154-WS-Unit 4_KEY.pdf",
+                "CHEM154-WS-Unit 5_KEY.pdf",
+                "CHEM154-WS-Unit 6_KEY.pdf",
+                "CHEM154-WS-Unit 7_KEY.pdf",
+                "CHEM154-WS-Unit 8_KEY.pdf",
+                "CHEM154-WS-Unit 9_KEY.pdf",
+                "CHEM154-WS-Unit 10_KEY.pdf",
+                "CHEM154-WS-Unit 11_KEY.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/chem154/worksheets/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
             <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for Chem 154 exams...</p>
+            <ul className="list-none">
+              {[
+                "CHEM_154_Midterm_Exam_Solutions.pdf",
+                "CHEM154_Final_Solutions.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/chem154/exams/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         );
       case "phys-157":
