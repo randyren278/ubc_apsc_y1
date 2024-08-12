@@ -77,21 +77,69 @@ export default function CourseTab({ course }: CourseTabProps) {
         return (
           <div>
             <h2 className="text-2xl font-semibold  text-white">
-              Lecture Notes
+              Math Assignments
             </h2>
-            <p className=" text-gray-300">
-              Content for Math 101 lecture notes...
-            </p>
+            <ul className="list-none">
+              {[
+                "A1(A).pdf",
+                "A2(A).pdf",
+                "A3(A).pdf",
+                "A4(A).pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/math101/math assignments/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
 
             <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
+              Textbook
             </h2>
-            <p className=" text-gray-300">
-              Content for Math 101 practice questions...
-            </p>
+            <ul className="list-none">
+              {[
+                "calculus 2 textbook.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/math 101/textbook/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
 
-            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for Math 101 exams...</p>
+            <h2 className="text-2xl font-semibold  text-white">
+              Problem Book
+            </h2>
+            <ul className="list-none">
+              {[
+                "calculus 2 problems.pdf",
+              ].map((fileName, index) => (
+                <li key={index} className="mb-2">
+                  <a
+                    href={`/math 101/textbook/${fileName}`}
+                    className="text-blue-500 hover:text-blue-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {fileName.replace(".pdf", "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
           </div>
         );
       case "math-152":
