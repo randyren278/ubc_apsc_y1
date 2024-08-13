@@ -26,7 +26,7 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
 
   return (
     <div
-      className={`flex h-screen fixed transition-all duration-0 ${
+      className={`flex h-screen fixed${
         isHovered ? "w-64" : "w-13"
       }`}
       onMouseEnter={() => setIsHovered(true)}
