@@ -22,20 +22,6 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
       tab: "courses",
       icon: <IconBook className="   text-neutral-200 h-5 w-5 flex-shrink-0" />,
     },
-    {
-      label: "Practice",
-      tab: "practice",
-      icon: (
-        <IconPencil className="   text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
-    {
-      label: "Exams",
-      tab: "exams",
-      icon: (
-        <IconCertificate className="   text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
   ];
 
   return (
