@@ -242,7 +242,7 @@ export default function CourseTab({ course }: CourseTabProps) {
         return (
           <div>
             <h2 className="text-2xl font-semibold  text-white">
-              Online Resources
+              Online Programming in C Resources
             </h2>
             <p className=" text-gray-300">
               W3Schools, LeetCode, Code Academy, HackerRank, and Tinkercad (for arduino)
