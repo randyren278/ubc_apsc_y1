@@ -242,21 +242,11 @@ export default function CourseTab({ course }: CourseTabProps) {
         return (
           <div>
             <h2 className="text-2xl font-semibold  text-white">
-              Lecture Notes
+              Online Resources
             </h2>
             <p className=" text-gray-300">
-              Content for APSC 160 lecture notes...
+              W3Schools, LeetCode, Code Academy, HackerRank, and Tinkercad (for arduino)
             </p>
-
-            <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
-            </h2>
-            <p className=" text-gray-300">
-              Content for APSC 160 practice questions...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for APSC 160 exams...</p>
           </div>
         );
       case "chem-154":
