@@ -211,27 +211,33 @@ export default function CourseTab({ course }: CourseTabProps) {
             </ul>
           </div>
         );
-      case "apsc-101":
-        return (
-          <div>
-            <h2 className="text-2xl font-semibold  text-white">
-              Lecture Notes
-            </h2>
-            <p className=" text-gray-300">
-              Content for APSC 101 lecture notes...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">
-              Practice Questions
-            </h2>
-            <p className=" text-gray-300">
-              Content for APSC 101 practice questions...
-            </p>
-
-            <h2 className="text-2xl font-semibold  text-white">Exams</h2>
-            <p className=" text-gray-300">Content for APSC 101 exams...</p>
-          </div>
-        );
+        case "apsc-101":
+          return (
+            <div>
+              <h2 className="text-2xl font-semibold  text-white">
+                Module Content
+              </h2>
+              <ul className="list-none">
+                {[
+                  "EOI.pdf",
+                  "Eposter.pdf",
+                  "Van Anda Final PPTX.pdf",
+                  "Final Spreadsheet.xlsx",
+                ].map((fileName, index) => (
+                  <li key={index} className="mb-2">
+                    <a
+                      href={`/apsc101/${fileName}`}
+                      className="text-blue-500 hover:text-blue-700"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {fileName.replace(".pdf", "").replace(".xlsx", "")}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
       case "apsc-160":
         return (
           <div>
