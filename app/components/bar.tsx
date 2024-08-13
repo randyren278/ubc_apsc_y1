@@ -19,14 +19,23 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
       label: "Courses",
       tab: "courses",
       icon: <IconBook className="text-neutral-200 h-5 w-5 flex-shrink-0" />,
+      href: null,  // No href for courses
     },
     {
       label: "Contact Me",
-      tab: "contact",
+      tab: null,  // No tab change for Contact Me
       icon: <IconMail className="text-neutral-200 h-5 w-5 flex-shrink-0" />,
-      href: "mailto:randyren278@gmail.com"
+      href: "mailto:randyren278@gmail.com",  // Mailto link for Contact Me
     }
   ];
+
+  const handleLinkClick = (link: any) => {
+    if (link.href) {
+      window.location.href = link.href;  // Handle mailto link
+    } else if (link.tab) {
+      setTab(link.tab);  // Handle tab change
+    }
+  };
 
   return (
     <div
@@ -49,11 +58,11 @@ export function SidebarDemo({ setTab }: SidebarDemoProps) {
             )}
           </div>
         </div>
-        <div className="mt-1 flex flex-col gap-2 flex-grow">
+        <div className="mt-4 flex flex-col gap-2 flex-grow">
           {links.map((link, idx) => (
             <div
               key={idx}
-              onClick={() => setTab(link.tab)}
+              onClick={() => handleLinkClick(link)}
               className="flex items-center p-4 hover:bg-neutral-700 rounded-md cursor-pointer"
             >
               {link.icon}
